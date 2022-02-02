@@ -1,0 +1,159 @@
+/*
+    Slider
+*/
+.slider-v4{
+    @extend .slider-v3;
+    .banner-caption-h3{
+        @include font-BilyOhio();
+        font-size: 60px;
+        line-height: 60px;
+        color: #f9bf0f;
+        letter-spacing: 0;
+    }
+    .banner-caption-h1{
+        font-size: 70px;
+        line-height: 70px;
+        letter-spacing: 0;
+    }
+    .banner-caption-p{
+        color: $white-text;
+    }
+    .banner-caption-button{
+        .garden-button{
+            border: 2px dashed $white-text;
+            &:hover{
+                border: 2px dashed $primary-color;
+                a{
+                    background: $primary-color;
+                    color: $white-text;
+                }
+            }
+            a{
+                background: $white-text;
+                color: $mine-shaft-text;
+            }
+        }
+    }
+    .banner-caption-form{
+        width: 370px;
+        .box-form{
+            background: url('../images/slider/bg-form.jpg') no-repeat center center;
+            @include background-cover();
+            h3{
+                font-size: 19px;
+                color: $white-text;
+                @include font-bold();
+                left: 3px;
+                line-height: 80px;
+                background: $primary-color;
+                text-align: center;
+                padding: 0 15px;
+            }
+            form{
+                text-align: center;
+                padding: 35px;
+                .box-icon{
+                    margin-bottom: 25px;
+                    position: relative;
+                    span{
+                        font-size: 14px;
+                        color: rgba($mine-shaft-text, .7);
+                        position: absolute;
+                        left: 30px;
+                        top: 10px;
+                    }
+                    input, textarea{
+                        width: 100%;
+                        background: $white-text;
+                        border: 1px solid #dcddde;
+                        outline: none;
+                        padding: 10px 30px 10px 52px;
+                        font-size: 14px;
+                        color: $mine-shaft-text;
+                        &:focus{
+                            border: 1px solid $primary-color;
+                        }
+                    }
+                    input{
+                        border-radius: 46px;
+                        height: 46px;
+                        line-height: 46px;
+                    }
+                    textarea{
+                        border-radius: 25px;
+                    }
+                }
+                .garden-button{
+                    margin-top: -15px;
+                    border-radius: 54px;
+                    &:hover{
+                        border: 2px dashed $primary-color;
+                    }
+                    a{
+                        line-height: 40px !important;
+                        border-radius: 40px;
+                        background: $primary-color;
+                        color: $white-text;
+                        font-size: 14px;
+                        letter-spacing: 3px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Services
+*/
+.services-v4{
+    .garden-img-full-width{
+        border-radius: 10px;
+    }
+    h3{
+        padding-top: 32px;
+        font-size: 25px;
+        color: $mine-shaft-text;
+        @include font-bold();
+        letter-spacing: 3px;
+    }
+    p{
+        padding-top: 5px;
+        font-size: 14px;
+        color: $nandor-text;
+        @include font-regular();
+    }
+}
+/*
+    Cheers
+*/
+.cheers{
+    background: url('../images/index-4/bg-cheers.jpg');
+    @include background-parallax();
+    .box{
+        padding: 60px;
+        background: $white-text;
+        h6{
+            @include font-BilyOhio();
+            font-size: 30px;
+            line-height: 30px;
+            color: $primary-color;
+        }
+        h3{
+            padding-bottom: 20px;
+            @include font-bold();
+            font-size: 36px;
+            line-height: 36px;
+            color: $mine-shaft-text;
+            text-transform: uppercase;
+        }
+        p{
+            padding-bottom: 32px;
+            @include font-regular();
+            font-size: 14px;
+            color: $nandor-text;
+        }
+        img{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,168 @@
+/*
+    About
+*/
+.about-v2{
+    .box-content{
+        h3{
+            padding-bottom: 15px;
+            @include font-BilyOhio();
+            font-size: 80px;
+            line-height: 80px;
+            color: $primary-color;
+        }
+        p{
+            padding-bottom: 12px;
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+            strong{
+                @include font-bold();
+            }
+        }
+    }
+    .box-image{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+/*
+    History
+*/
+.history{
+    .box{
+        border-top: 1px solid #dcddde;
+        .times{
+            border-left: 1px solid #dcddde;
+            li{
+                padding-left: 14px;
+                padding-bottom: 20px;
+                position: relative;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+                &:hover{
+                    &:before{
+                        background: $primary-color;
+                        border: 2px solid $primary-color;
+                    }
+                    p{
+                        color: $primary-color;
+                    }
+                }
+                &:before{
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    background: $white-text;
+                    border: 2px solid #dcddde;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -6px;
+                    top: 5px;
+                }
+                h3{
+                    font-size: 19px;
+                    color: $mine-shaft-text;
+                    @include font-bold();
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $nandor-text;
+                    @include font-regular();
+                }
+            }
+        }
+        .box-content{
+            p{
+                font-size: 14px;
+                color: $nandor-text;
+                @include font-regular();
+                &.garden-first-letter{
+                    padding-bottom: 15px;
+                    &:first-letter{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Count To Number
+*/
+.counttonumber{
+    @extend .who-we-are;
+    background: url('../images/about/bg-count-to-number.jpg');
+    @include background-parallax();
+    .count-to-number{
+        .box-number{
+            p{
+                color: $white-text;
+            }
+        }
+    }
+}
+/*
+    Our Team
+*/
+.our-team{
+    .garden-title{
+        padding-bottom: 60px;
+    }
+    li{
+        .garden-overlay-scale{
+            border: 1px solid #dcddde;
+            border-radius: 10px;
+            overflow: hidden;
+            .garden-overlay{
+                background: rgba(#000, .5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:before{
+                    display: none;
+                }
+                ul{
+                    width: 100%;
+                    text-align: center;
+                    li{
+                        display: inline-block;
+                        padding: 0 12px;
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                        }
+                        a{
+                            color: $white-text;
+                            font-size: 18px;
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h3{
+            padding-top: 16px;
+            font-size: 22px;
+            color: $mine-shaft-text;
+            @include font-medium();
+        }
+        p{
+            display: inline-block;
+            background: $primary-color;
+            font-size: 12px;
+            line-height: 19px;
+            color: $white-text;
+            padding: 0 12px;
+            text-transform: uppercase;
+            @include font-medium();
+        }
+    }
+}

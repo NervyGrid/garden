@@ -1,0 +1,45 @@
+/*
+    404
+*/
+.page-not-found{
+    .box-image{
+        margin-right: 40px;
+        img{
+            display: block;
+            margin: 0 0 0 auto;
+        }
+    }
+    .box-content{
+        padding-top: 75px;
+        h1{
+            padding-bottom: 15px;
+            font-size: 72px;
+            line-height: 72px;
+            color: $nandor-text;
+            @include font-bold();
+        }
+        p{
+            padding-bottom: 47px;
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+        }
+        .garden-button{
+            border: 2px dashed $primary-color;
+            padding: 4px;
+            border-radius: 68px;
+            &:hover{
+                a{
+                    background: transparent;
+                    color: $primary-color;
+                }
+            }
+            a{
+                background: $primary-color;
+                color: $white-text;
+                line-height: 56px;
+                border-radius: 56px;
+            }
+        }
+    }
+}

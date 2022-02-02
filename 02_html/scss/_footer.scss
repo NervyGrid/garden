@@ -1,0 +1,144 @@
+/*
+    Back To Top
+*/
+.backtotop{
+    background: $primary-color;
+    box-shadow: 0 0 15px rgba(#000, .2);
+    opacity: 0.7;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 30px;
+    color: $white-text;
+    z-index: 992;
+    text-align: center;
+    font-size: 16px;
+    line-height: 38px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    &:hover{
+        opacity: 1;
+        transition: all .5s ease;
+    }
+    &.show-backtotop{
+        display: block;
+        -webkit-animation: bounceInUp 0.7s both;
+        -moz-animation: bounceInUp 0.7s both;
+        -o-animation: bounceInUp 0.7s both;
+        animation: bounceInUp 0.7s both;
+    }
+}
+/*
+    Footer V1
+*/
+.footer-v1{
+    .footer{
+        padding: 70px 0 100px 0;
+        background: #171d20;
+        .box{
+            .logo{
+                margin-bottom: 11px;
+                a{
+                    display: inline-block;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+            .box-title{
+                margin: 24px 0 20px 0;
+                h3{
+                    @include font-BilyOhio();
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: $white-text;
+                }
+            }
+            .content{
+                p{
+                    font-size: 14px;
+                    color: #dcddde;
+                    @include font-regular();
+                }
+                .info{
+                    margin-top: 17px;
+                    li{
+                        line-height: 36px;
+                        p{
+                            span{
+                                min-width: 24px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .box-contact{
+                    li{
+                        padding-bottom: 16px;
+                        &:last-child{
+                            padding-bottom: 0;
+                        }
+                        span{
+                            padding-right: 15px;
+                            color: $primary-color;
+                        }
+                        i{
+                            color: $primary-color;
+                        }
+                    }
+                }
+                .list-logo{
+                    li{
+                        margin: 0 26px 9px 0;
+                        display: inline-block;
+                        a{
+                            display: inline-block;
+                            &:hover{
+                                img{
+                                    opacity: 1;
+                                }
+                            }
+                            img{
+                                display: block;
+                                opacity: .6;
+                                @include transition();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        padding: 14px 0;
+        background: #13181a;
+        p{
+            font-size: 14px;
+            color: #f8f8f8;
+            @include font-light();
+        }
+        li{
+            padding: 0 9px;
+            display: inline-block;
+            a{
+                display: inline-block;
+                &:hover{
+                    span{
+                        color: $primary-color;
+                    }
+                }
+                span{
+                    font-size: 14px;
+                    color: $nandor-text;
+                }
+            }
+        }
+    }
+}

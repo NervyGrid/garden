@@ -1,0 +1,33 @@
+/*
+    Gallery
+*/
+.gallery{
+    .row{
+        .push-offset-6{
+            position: relative;
+            left: 50%;
+        }
+        .pull-offset-6{
+            position: relative;
+            left: -50%;
+        }
+    }
+    .box{
+        margin-bottom: 30px;
+    }
+    .garden-button{
+        margin-top: 20px;
+    }
+}
+/*
+    Gallery V3
+*/
+.gallery-v3{
+    @extend .gallery;
+    .box{
+        margin-bottom: 0;
+    }
+    .garden-button{
+        margin-top: 50px;
+    }
+}

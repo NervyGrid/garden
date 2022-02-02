@@ -1,0 +1,198 @@
+/*
+    Portfolio
+*/
+.portfolio{
+    li{
+        padding-bottom: 40px;
+    }
+    .box{
+        .garden-overlay-scale{
+            h5{
+                background: $white-text;
+                color: $mine-shaft-text;
+                text-transform: uppercase;
+                height: 23px;
+                line-height: 23px;
+                padding: 0 15px;
+                font-size: 12px;
+                @include font-bold();
+                position: absolute;
+                top: 9px;
+                left: 9px;
+                z-index: 3;
+            }
+            .garden-overlay{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                &:before{
+                    display: none;
+                }
+                a{
+                    display: inline-block;
+                    font-size: 18px;
+                    color: $white-text;
+                }
+            }
+        }
+        h3{
+            padding-top: 15px;
+            display: inline-block;
+            font-size: 19px;
+            color: $mine-shaft-text;
+            @include font-medium();
+            text-transform: uppercase;
+        }
+    }
+}
+/*
+    Portfolio Detail
+*/
+.portfolio-detail{
+    .row{
+        .push-offset-3{
+            position: relative;
+            left: 25%;
+        }
+        .pull-offset-9{
+            position: relative;
+            left: -75%;
+        }
+    }
+    .box-content{
+        h3{
+            padding-bottom: 16px;
+            font-size: 25px;
+            color: $mine-shaft-text;
+            @include font-medium();
+            span{
+                color: $primary-color;
+                padding-right: 13px;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+        }
+        .garden-img-full-width{
+            margin: 22px 0;
+        }
+        .title{
+            h3{
+                padding-bottom: 0;
+                font-size: 25px;
+                color: $mine-shaft-text;
+                @include font-bold();
+                i{
+                    padding-left: 8px;
+                    @include font-regular();
+                    color: $primary-color;
+                }
+            }
+        }
+        .question{
+            border-top: 1px solid #dcddde;
+            border-bottom: 1px solid #dcddde;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            padding-top: 30px;
+            .holder-question{
+                margin-top: 25px;
+                .has-title{
+                    margin-bottom: 15px;
+                    border: 1px solid $nandor-text;
+                    &:first-child{
+                        .sub-content{
+                            display: block;
+                        }
+                    }
+                    &:hover, &.active{
+                        border: 1px solid $primary-color;
+                        a{
+                            background: $primary-color;
+                        }
+                    }
+                    a{
+                        background: $nandor-text;
+                        display: block;
+                        line-height: 45px;
+                        padding: 0 52px 0 26px;
+                        @include font-regular();
+                        font-size: 14px;
+                        color: $white-text;
+                        position: relative;
+                        span{
+                            position: absolute;
+                            right: 26px;
+                            top: 16px;
+                        }
+                    }
+                    .sub-content{
+                        display: none;
+                        p{
+                            padding: 26px;
+                            @include font-regular();
+                            font-size: 14px;
+                            color: $nandor-text;
+                        }
+                    }
+                }
+            }
+        }
+        .our-testimonial{
+            @extend .client-say;
+            background: transparent;
+            .title{
+                padding-bottom: 20px;
+            }
+            .box{
+                .name{
+                    h3{
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+        .box-banner{
+            .garden-img-full-width{
+                margin: 0;
+                position: relative;
+                h5{
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    @include font-BilyOhio();
+                    font-size: 38px;
+                    line-height: 50px;
+                    color: $white-text;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                }
+                .sale{
+                    padding-left: 20px;
+                    padding-bottom: 15px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    h6{
+                        font-size: 19px;
+                        color: $white-text;
+                        @include font-regular();
+                        letter-spacing: 3px;
+                    }
+                    h1{
+                        font-size: 60px;
+                        line-height: 60px;
+                        color: $white-text;
+                        @include font-bold();
+                    }
+                }
+            }
+        }
+    }
+}

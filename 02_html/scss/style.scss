@@ -1,0 +1,166 @@
+/*
+ * Title:   Paradise Garden - Gardening and Landscaping - HTML Template
+ * Author:  QTC Media
+ */
+
+/* --------------------------------------------------------
+[Table of contents]
+
+1. Google Font
+2. Reset CSS
+3. Variables
+4. Mimin
+5. Global
+6. Header
+7. Footer
+8. Home One
+9. Home Two
+10. Home Three
+11. Home Four
+12. About
+13. Contact
+14. Portfolio
+15. Services
+16. Pricing
+17. Testimonial
+18. Gallery
+19. Shop
+21. Blog
+22. 404
+111. Coming Soon
+
+[End table of contents]
+----------------------------------------------------------------------- */
+
+
+/*----------------------
+    Google Font
+------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+/*----------------------
+    Reset CSS
+------------------------*/
+
+@import "reset";
+
+/*----------------------
+    Variables
+------------------------*/
+
+@import "variables";
+
+/*----------------------
+    Mimin
+------------------------*/
+
+@import "mimin";
+
+/*----------------------
+    Global
+------------------------*/
+
+@import "global";
+
+/*----------------------
+    Header
+------------------------*/
+
+@import "header";
+
+/*----------------------
+    Footer
+------------------------*/
+
+@import "footer";
+
+/*----------------------
+    Home One
+------------------------*/
+
+@import "index";
+
+/*----------------------
+    Home Two
+------------------------*/
+
+@import "index-2";
+
+/*----------------------
+    Home Three
+------------------------*/
+
+@import "index-3";
+
+/*----------------------
+    Home Four
+------------------------*/
+
+@import "index-4";
+
+/*----------------------
+    About
+------------------------*/
+
+@import "about";
+
+/*----------------------
+    Contact
+------------------------*/
+
+@import "contact";
+
+/*----------------------
+    Portfolio
+------------------------*/
+
+@import "portfolio";
+
+/*----------------------
+    Services
+------------------------*/
+
+@import "services";
+
+/*----------------------
+    Pricing
+------------------------*/
+
+@import "pricing";
+
+/*----------------------
+    Testimonial
+------------------------*/
+
+@import "testimonial";
+
+/*----------------------
+    Gallery
+------------------------*/
+
+@import "gallery";
+
+/*----------------------
+    Shop
+------------------------*/
+
+@import "shop";
+
+/*----------------------
+    Blog
+------------------------*/
+
+@import "blog";
+
+/*----------------------
+    404
+------------------------*/
+
+@import "404";
+
+/*----------------------
+    Coming Soon
+------------------------*/
+
+@import "coming-soon";

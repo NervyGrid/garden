@@ -1,0 +1,165 @@
+/*
+    Contact Info
+*/
+.contact-info{
+    .title{
+        padding-bottom: 71px;
+        h3{
+            padding-bottom: 28px;
+            text-align: center;
+            font-size: 36px;
+            line-height: 36px;
+            color: $mine-shaft-text;
+            @include font-bold();
+        }
+        p{
+            padding: 0 10%;
+            text-align: center;
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+        }
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .box-icon{
+            width: 92px;
+            height: 92px;
+            border: 2px dashed $primary-color;
+            border-radius: 50%;
+            padding: 11px;
+            span{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $primary-color;
+                border-radius: 50%;
+                font-size: 30px;
+                color: $white-text;
+            }
+        }
+        .box-content{
+            padding-left: 20px;
+            h3{
+                padding-bottom: 10px;
+                font-size: 24px;
+                color: $mine-shaft-text;
+                @include font-medium();
+            }
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                color: $nandor-text;
+                @include font-regular();
+            }
+        }
+    }
+}
+/*
+    Contact Form
+*/
+.contact-form{
+    text-align: center;
+    background: url('../images/contact/bg-contact-form.jpg');
+    @include background-parallax();
+    .box{
+        width: 80%;
+        margin: 0 auto;
+        h3{
+            font-size: 36px;
+            line-height: 36px;
+            color: $white-text;
+            @include font-semibold();
+        }
+        p{
+            font-size: 14px;
+            color: $white-text;
+            @include font-regular();
+            span{
+                color: #f54406;
+            }
+        }
+        form{
+            margin-top: 28px;
+        }
+    }
+}
+/*
+    Working Time
+*/
+.working-time-v2{
+    .box-time{
+        margin-right: 50px;
+        h3{
+            font-size: 36px;
+            line-height: 36px;
+            color: $mine-shaft-text;
+            @include font-bold();
+        }
+        h6{
+            padding-bottom: 30px;
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+        }
+        li{
+            margin-bottom: 15px;
+            padding: 0 25px;
+            line-height: 45px;
+            background: $primary-color;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 14px;
+                color: $white-text;
+                @include font-bold();
+                i{
+                    @include font-regular();
+                    float: right;
+                }
+            }
+        }
+    }
+    .box-content{
+        p{
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+            &.garden-first-letter{
+                padding-bottom: 15px;
+                &:first-letter{
+                    color: $primary-color;
+                }
+            }
+            strong{
+                color: $mine-shaft-text;
+                @include font-medium();
+            }
+        }
+    }
+}
+/*
+    Google Map
+*/
+.gmap-contact{
+    .gmap-wrapper{
+        #gmap_contact{
+            width: 100%;
+            height: 540px;
+            .gm-style{
+                .gm-style-iw{
+                    font-size: 14px;
+                    @include font-bold();
+                    color: $nandor-text;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}

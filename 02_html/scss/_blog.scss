@@ -1,0 +1,236 @@
+/*
+    Blog
+*/
+.blog{
+    li{
+        margin-bottom: 30px;
+    }
+    .box{
+        .garden-overlay-scale{
+            .garden-overlay{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(#000, .6);
+                &:before{
+                    display: none;
+                }
+                .garden-button{
+                    padding: 3px;
+                    border: 1px dashed transparent;
+                    border-radius: 44px;
+                    &:hover{
+                        border: 1px dashed $primary-color;
+                    }
+                    a{
+                        background: $primary-color;
+                        color: $white-text;
+                        font-size: 12px;
+                        line-height: 30px;
+                        border-radius: 30px;
+                        padding: 0 18px;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+        h6{
+            display: inline-block;
+            margin-top: 17px;
+            background: $primary-color;
+            color: $white-text;
+            line-height: 13px;
+            padding: 0 5px;
+            font-size: 10px;
+            @include font-medium();
+        }
+        h3{
+            padding-bottom: 13px;
+            font-size: 19px;
+            color: $mine-shaft-text;
+            @include font-medium();
+        }
+        p{
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+        }
+        h5{
+            padding-top: 5px;
+            font-size: 12px;
+            color: #ababab;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            @include font-regular();
+        }
+    }
+    .garden-button{
+        margin-top: 10px;
+    }
+}
+/*
+    Blog Detail
+*/
+.blog-detail{
+    .box-detail{
+        h6{
+            padding-bottom: 5px;
+            font-size: 18px;
+            color: $primary-color;
+            @include font-bold();
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h3{
+            padding-bottom: 24px;
+            font-size: 30px;
+            line-height: 30px;
+            color: $mine-shaft-text;
+            @include font-medium();
+        }
+        p{
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+            strong{
+                display: block;
+                padding-bottom: 12px;
+                @include font-bold();
+            }
+        }
+        .garden-img-full-width{
+            margin: 30px 0;
+        }
+        ul{
+            margin-top: 38px;
+            li{
+                padding: 0 14px;
+                display: inline-block;
+                a{
+                    font-size: 20px;
+                    color: $nandor-text;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+    .comments{
+        margin-top: 60px;
+        h3{
+            font-size: 25px;
+            color: $mine-shaft-text;
+            @include font-semibold();
+            border-bottom: 1px solid #edeeee;
+            padding-bottom: 7px;
+            margin-bottom: 45px;
+        }
+        .box-comment{
+            + .comment-list{
+                padding-left: 110px;
+                li{
+                    margin-bottom: 0;
+                }
+                .box-comment{
+                    margin-top: 17px;
+                    padding-top: 22px;
+                    border-top: 1px solid #edeeee;
+                }
+            }
+        }
+        .comment-list{
+            li{
+                margin-bottom: 45px;
+                .box-comment{
+                    .comment{
+                        .comment-image{
+                            float: left;
+                            width: 80px;
+                            height: 80px;
+                            img{
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                        .comment-content{
+                            margin-left: 110px;
+                            h5{
+                                font-size: 19px;
+                                color: $mine-shaft-text;
+                                @include font-regular();
+                                i{
+                                    font-size: 12px;
+                                    color: #a3a6a5;
+                                }
+                            }
+                            p{
+                                font-size: 14px;
+                                color: $nandor-text;
+                                @include font-regular();
+                            }
+                            a{
+                                font-size: 12px;
+                                color: $nandor-text;
+                                @include font-regular();
+                                &:hover{
+                                    color: $primary-color;
+                                }
+                                span{
+                                    display: inline-block;
+                                    line-height: 18px;
+                                    padding: 0 5px;
+                                    margin-left: 8px;
+                                    background: $primary-color;
+                                    color: $white-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .leave-comment{
+        h3{
+            font-size: 25px;
+            color: $mine-shaft-text;
+            @include font-semibold();
+        }
+        p{
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+            span{
+                color: #f90421;
+            }
+        }
+        .garden-form{
+            form{
+                margin-top: 24px;
+                .position-relative{
+                    input, textarea{
+                        background: #fafafa;
+                        border: 1px solid #dcddde;
+                        color: $mine-shaft-text;
+                    }
+                    p{
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Blog V3
+*/
+.blog-v3{
+    @extend .blog;
+    .box{
+        h3{
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+}

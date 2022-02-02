@@ -1,0 +1,564 @@
+/*
+    Slider
+*/
+.slider-v3{
+    .banner-caption-h5{
+        font-size: 24px;
+        color: #f9bf0f;
+        @include font-bold();
+        letter-spacing: 5px;
+        position: relative;
+        padding: 13px 3px 10px 3px;
+        &:before, &:after{
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: rgba($white-text, .5);
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+        &:before{
+            top: 0;
+        }
+        &:after{
+            bottom: 0;
+        }
+    }
+    .banner-caption-h1{
+        font-size: 80px;
+        line-height: 80px;
+        color: $white-text;
+        @include font-bold();
+        letter-spacing: 5px;
+    }
+    .banner-caption-h3{
+        font-size: 36px;
+        line-height: 36px;
+        color: #dcddde;
+        @include font-regular();
+        letter-spacing: 5px;
+    }
+    .banner-caption-p{
+        font-size: 19px;
+        color: #d3d3d3;
+        @include font-light();
+    }
+    .banner-caption-button{
+        .garden-button{
+            border-radius: 50px;
+            @include transition();
+            &:hover{
+                border: 2px dashed $primary-color;
+            }
+            a{
+                background: $primary-color;
+                line-height: 38px;
+                border-radius: 38px;
+                padding: 0 30px;
+                color: $white-text;
+            }
+        }
+    }
+    .tp-bullets{
+        .tp-bullet{
+            width: 14px;
+            height: 14px;
+            border: 2px solid rgba($white-text, .4);
+            box-shadow: none;
+            background: transparent;
+            &:hover{
+                border: 2px solid rgba($white-text, .8);
+            }
+            &.selected{
+                border: 2px solid rgba($white-text, .8);
+                &:before{
+                    opacity: 1;
+                }
+            }
+            &:after{
+                display: none;
+            }
+            &:before{
+                content: '';
+                width: 5px;
+                height: 5px;
+                background: $primary-color;
+                border-radius: 50%;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include translate-xy(-50%, -50%);
+            }
+        }
+    }
+}
+/*
+    Services
+*/
+.services-v3{
+    .box{
+        position: relative;
+        overflow: hidden;
+        @include translate-z(0);
+        &:hover{
+            .text-default{
+                bottom: -25%;
+                opacity: 0;
+                @include transition();
+            }
+            .text-hover{
+                top: 0;
+                transition: all .5s ease .5s;
+            }
+        }
+        h3{
+            padding: 0 15px;
+            font-size: 30px;
+            line-height: 30px;
+            color: $white-text;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            @include font-bold();
+        }
+        .text-default{
+            width: 100%;
+            padding: 25px 0;
+            background: rgba($primary-color, .8);
+            background: -webkit-linear-gradient(bottom, rgba($primary-color, .8) , transparent);
+            background: -o-linear-gradient(top, rgba($primary-color, .8) , transparent);
+            background: -moz-linear-gradient(top, rgba($primary-color, .8) , transparent);
+            background: linear-gradient(to top, rgba($primary-color, .8) , transparent);
+            opacity: 1;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            @include transition();
+        }
+        .text-hover{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba($primary-color, .8);
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            .content{
+                .box-icon{
+                    margin-bottom: 30px;
+                    .flaticon{
+                        &:before{
+                            margin: 0;
+                            color: $white-text;
+                            font-size: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Who We Are
+*/
+.who-we-are{
+    .box-title{
+        .garden-title{
+            p{
+                padding: 10px 0 0 0;
+            }
+        }
+    }
+    .box-image{
+        padding-left: 45px;
+        img{
+            display: block;
+        }
+    }
+    .box-content{
+        padding-left: 30px;
+        p{
+            font-size: 14px;
+            color: $nandor-text;
+            @include font-regular();
+            strong{
+                display: block;
+                padding-bottom: 10px;
+                @include font-bold();
+            }
+        }
+    }
+    .count-to-number{
+        margin-top: 55px;
+        .box-number{
+            text-align: center;
+            .number{
+                display: inline-block;
+                padding: 8px;
+                border: 2px dashed $primary-color;
+                border-radius: 50%;
+                h3{
+                    width: 98px;
+                    height: 98px;
+                    line-height: 103px;
+                    background: $primary-color;
+                    border-radius: 50%;
+                    font-size: 22px;
+                    color: $white-text;
+                    @include font-bold();
+                }
+            }
+            p{
+                padding-top: 15px;
+                font-size: 19px;
+                color: $nandor-text;
+                @include font-bold();
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+/*
+    Paradise Garden
+*/
+.paradise-garden{
+    &.garden-set-pd{
+        padding-bottom: 185px;
+    }
+    overflow: hidden;
+    background: url('../images/index-3/br-paradise-garden.jpg');
+    @include background-parallax();
+    position: relative;
+    .border-width{
+        position: absolute;
+        bottom: 0;
+    }
+    .left{
+        left: 0;
+        border-left-color: $white-text;
+        border-left-style: solid;
+        border-right-color: transparent;
+        border-right-style: solid;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 130px;
+    }
+    .right{
+        right: 0;
+        border-left-color: transparent;
+        border-left-style: solid;
+        border-right-color: $white-text;
+        border-right-style: solid;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 130px;
+    }
+    h1{
+        @include font-BilyOhio();
+        @include font-bold();
+        font-size: 110px;
+        line-height: 110px;
+        color: $white-text;
+    }
+    h6{
+        padding: 12px 0 72px 0;
+        @include font-bold();
+        font-size: 36px;
+        line-height: 36px;
+        color: #ababab;
+        letter-spacing: 8px;
+    }
+    .box{
+        width: 65%;
+        margin: 0 auto;
+        .content{
+            h3{
+                padding-bottom: 8px;
+                font-size: 72px;
+                line-height: 72px;
+                color: #f9bf0f;
+                @include font-bold();
+            }
+            p{
+                padding: 0 15%;
+                font-size: 14px;
+                color: $white-text;
+                @include font-regular();
+            }
+        }
+    }
+    .owl-nav{
+        .owl-prev, .owl-next{
+            width: 45px;
+            height: 45px;
+            border: 3px solid rgba($white-text, .2);
+            border-radius: 50%;
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            @include translate-y(-50%);
+            @include transition();
+            &:before{
+                font-family: 'FontAwesome';
+                font-size: 24px;
+                color: rgba($white-text, .2);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include translate-xy(-50%, -50%);
+                @include transition();
+            }
+            &:hover{
+                border: 3px solid $white-text;
+                &:before{
+                    color: $white-text;
+                }
+            }
+        }
+        .owl-prev{
+            left: 0;
+            &:before{
+                content: '\f104';
+            }
+        }
+        .owl-next{
+            right: 0;
+            &:before{
+                content: '\f105';
+            }
+        }
+    }
+}
+/*
+    Why Choose Us
+*/
+.why-choose-us-v2{
+    @extend .why-choose-us;
+    background: url('../images/index-3/bg-why-choose-us.jpg') no-repeat center center;
+    @include background-cover();
+    &.garden-set-pd{
+        padding: 100px 0;
+    }
+    .garden-title{
+        p{
+            padding: 10px 15% 0 15%;
+        }
+    }
+    li{
+        &:nth-last-child(3){
+            padding-bottom: 50px;
+        }
+    }
+    .box{
+        .box-icon{
+            .flaticon{
+                &:before{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .garden-img-full-width{
+        box-shadow: 0 0 54px rgba(#000, .75);
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+        }
+    }
+}
+/*
+    Our Pricing
+*/
+.our-pricing{
+    .garden-title{
+        padding-bottom: 65px;
+    }
+    .box{
+        -webkit-transform: translateY(0) translateZ(0);
+        -moz-transform: translateY(0) translateZ(0);
+        -ms-transform: translateY(0) translateZ(0);
+        -o-transform: translateY(0) translateZ(0);
+        transform: translateY(0) translateZ(0);
+        border-radius: 5px;
+        @include transition();
+        &:hover{
+            -webkit-transform: translateY(-10px) translateZ(0);
+            -moz-transform: translateY(-10px) translateZ(0);
+            -ms-transform: translateY(-10px) translateZ(0);
+            -o-transform: translateY(-10px) translateZ(0);
+            transform: translateY(-10px) translateZ(0);
+            box-shadow: 0 0 35px rgba(#000, .2);
+            .box-header{
+                h6{
+                    background: -webkit-gradient(left, #fab102, #ffda6a);
+                    background: -webkit-linear-gradient(left, #fab102, #ffda6a);
+                    background: -moz-linear-gradient(right, #fab102, #ffda6a);
+                    background: -ms-linear-gradient(right, #fab102, #ffda6a);
+                    background: -o-linear-gradient(right, #fab102, #ffda6a);
+                    background: linear-gradient(to right, #fab102, #ffda6a);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -ms-background-clip: text;
+                    -o-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                    -ms-text-fill-color: transparent;
+                    -o-text-fill-color: transparent;
+                }
+            }
+            .box-content{
+                .garden-button{
+                    border: 2px dashed $primary-color;
+                    a{
+                        background: $primary-color;
+                    }
+                }
+            }
+        }
+        .box-header{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 25px 15px;
+            border-bottom: 5px solid #ababab;
+            background: #373737;
+            h6{
+                padding-bottom: 31px;
+                font-size: 19px;
+                @include font-bold();
+                letter-spacing: 5px;
+                background: -webkit-gradient(left, #79af05, #a1ea06);
+                background: -webkit-linear-gradient(left, #79af05, #a1ea06);
+                background: -moz-linear-gradient(right, #79af05, #a1ea06);
+                background: -ms-linear-gradient(right, #79af05, #a1ea06);
+                background: -o-linear-gradient(right, #79af05, #a1ea06);
+                background: linear-gradient(to right, #79af05, #a1ea06);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -ms-background-clip: text;
+                -o-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                -ms-text-fill-color: transparent;
+                -o-text-fill-color: transparent;
+            }
+            h1{
+                display: inline-block;
+                font-size: 80px;
+                line-height: 80px;
+                color: $white-text;
+                @include font-light();
+                position: relative;
+                span{
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: rgba($white-text, .4);
+                }
+                sup{
+                    font-size: 30px;
+                    position: absolute;
+                    left: -20px;
+                    top: -20px;
+                }
+            }
+            p{
+                padding-top: 25px;
+                font-size: 14px;
+                color: rgba($white-text, .4);
+                @include font-light();
+            }
+        }
+        .box-content{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 45px 15px;
+            background: #f6f6f6;
+            p{
+                padding-bottom: 22px;
+                font-size: 16px;
+                color: $nandor-text;
+                @include font-regular();
+                strong{
+                    @include font-bold();
+                }
+            }
+            .garden-button{
+                margin-top: 35px;
+                padding: 4px;
+                border-radius: 48px;
+                border: 2px dashed $nandor-text;
+                a{
+                    background: $nandor-text;
+                    color: $white-text;
+                    line-height: 36px;
+                    border-radius: 36px;
+                    padding: 0 22px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+/*
+    Grid
+*/
+.grid{
+    li{ 
+        position: relative;
+        &:nth-child(odd){
+            .box{
+                &:before{
+                    border-bottom: 20px solid #f6f6f6;
+                    bottom: 100%;
+                }
+            }
+        }
+        &:nth-child(even){
+            .box{
+                &:before{
+                    border-top: 20px solid #f6f6f6;
+                    top: 100%;
+                }
+            }
+            .garden-img-full-width{
+                position: absolute;
+                top: 100%;
+            }
+        }
+        .box{
+            background: #f6f6f6;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &:before{
+                content: '';
+                border-right: 20px solid transparent;
+                border-left: 20px solid transparent;
+                position: absolute;
+                left: 50%;
+                @include translate-x(-50%);
+            }
+            .box-content{
+                width: 100%;
+                padding: 105px 60px;
+                h3{
+                    padding-bottom: 29px;
+                    font-size: 33px;
+                    line-height: 33px;
+                    color: $nandor-text;
+                    @include font-bold();
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: 14px;
+                    color: $nandor-text;
+                    @include font-regular();
+                }
+            }
+        }
+    }
+}

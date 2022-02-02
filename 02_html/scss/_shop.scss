@@ -1,0 +1,326 @@
+/*
+    Shop
+*/
+.shop{
+    li{
+        margin-bottom: 45px;
+    }
+    .garden-pagination{
+        margin-top: 15px;
+    }
+}
+/*
+    Product Detail
+*/
+.product-detail{
+    overflow: hidden;
+    .box-detail{
+        .product-image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background: #fafafa;
+            border: 1px dashed #dcddde;
+            border-radius: 5px;
+            float: left;
+            width: 45%;
+            height: 420px;
+            img{
+                display: block;
+            }
+        }
+        .box-detail-content{
+            padding-left: 30px;
+            width: 55%;
+            float: right;
+            h3{
+                font-size: 25px;
+                color: $mine-shaft-text;
+                @include font-medium();
+            }
+            h6{
+                font-size: 18px;
+                color: $primary-color;
+                @include font-medium();
+            }
+            .rating{
+                margin: 8px 0 15px 0;
+                line-height: 20px;
+                li{
+                    span{
+                        font-size: 14px;
+                        color: #fab102;
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+                color: $nandor-text;
+                @include font-regular();
+            }
+            .qty-cart{
+                margin: 50px 0 15px 0;
+                .garden-button{
+                    padding: 3px;
+                    margin-left: 38px;
+                    &:hover{
+                        a{
+                            background: $white-text;
+                            color: $primary-color;
+                        }
+                    }
+                    a{
+                        line-height: 40px;
+                        font-size: 14px;
+                        color: $white-text;
+                        background: $primary-color;
+                        border-radius: 30px;
+                        @include font-bold();
+                        padding: 0 24px;
+                    }
+                }
+                .box-qty{
+                    display: inline-block;
+                    width: 87px;
+                    height: 30px;
+                    border: 1px solid #dcddde;
+                    position: relative;
+                    button{
+                        font-size: 14px;
+                        color: rgba($nandor-text, .3);
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        line-height: 15px;
+                        text-align: center;
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        position: absolute;
+                        top: 50%;
+                        @include translate-y(-50%);
+                        cursor: pointer;
+                        @include transition();
+                        &.qty-minus{
+                            left: 10px;
+                        }
+                        &.qty-plus{
+                            right: 10px;
+                        }
+                        &:hover{
+                            color: rgba($nandor-text, 1);
+                        }
+                    }
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        padding: 0 20px;
+                        text-align: center;
+                        background: transparent;
+                        font-size: 14px;
+                        color: $nandor-text;
+                        @include font-bold();
+                        outline: none;
+                        border: none;
+                    }
+                }
+            }
+            .category-tags{
+                h6, a{
+                    display: inline-block;
+                    font-size: 12px;
+                    color: $nandor-text;
+                }
+                h6{
+                    margin-right: 15px;
+                    @include font-bold();
+                }
+                a{
+                    @include font-regular();
+                }
+            }
+        }
+    }
+    .box-review{
+        margin-top: 55px;
+        border: 1px solid #dcddde;
+        overflow: hidden;
+        .tab-menu{
+            background: #fafafa;
+            border-bottom: 1px solid #dcddde;
+            ul{
+                display: flex;
+                li{
+                    &.active{
+                        &:hover{
+                            a{
+                                background: $nandor-text;
+                            }
+                        }
+                        a{
+                            background: $nandor-text;
+                            color: $white-text;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            background: #d0d0d0;
+                        }
+                    }
+                    a{
+                        @include font-bold();
+                        line-height: 45px;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: $nandor-text;
+                        padding: 0 35px;
+                        @include transition();
+                    }
+                }
+            }
+        }
+        .tab-content{
+            padding: 25px 35px;
+            text-align: left;
+            #description{
+                p{
+                    font-size: 14px;
+                    color: $nandor-text;
+                    @include font-regular();
+                }
+            }
+            #reviews{
+                h3{
+                    padding-bottom: 15px;
+                    font-size: 25px;
+                    color: $mine-shaft-text;
+                    @include font-medium();
+                }
+                li{
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                    .review{
+                        padding: 15px 0;
+                        border-bottom: 1px solid #dcddde;
+                        .author{
+                            display: flex;
+                            > *{
+                                margin-right: 5px;
+                            }
+                            h6{
+                                font-size: 14px;
+                                color: $nandor-text;
+                                @include font-bold();
+                            }
+                            p{
+                                font-size: 14px;
+                                color: $nandor-text;
+                                @include font-medium();
+                            }
+                            li{
+                                margin-bottom: 0;
+                                display: inline-block;
+                                span{
+                                    color: #fab102;
+                                }
+                            }
+                        }
+                        p{
+                            font-size: 13px;
+                            color: $nandor-text;
+                            @include font-regular();
+                        }
+                    }
+                }
+                .form-comment{
+                    form{
+                        h5{
+                            font-size: 16px;
+                            color: $mine-shaft-text;
+                            @include font-regular();
+                        }
+                        input, textarea{
+                            font-size: 14px;
+                            color: $mine-shaft-text;
+                            @include font-regular();
+                            border: 1px solid #dcddde;
+                            outline: none;
+                            background: transparent;
+                            margin-bottom: 20px;
+                            padding: 7px 20px;
+                            &:focus{
+                                border: 1px solid $primary-color;
+                            }
+                        }
+                        input{
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                        .jq-ry-container{
+                            padding: 0px;
+                            padding-bottom: 15px;
+                            width: 75px!important;
+                            >.jq-ry-group-wrapper{
+                                >.jq-ry-group{
+                                    >svg{
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        .garden-button{
+                            padding: 3px;
+                            &:hover{
+                                a{
+                                    background: $white-text;
+                                    color: $primary-color;
+                                }
+                            }
+                            a{
+                                font-size: 14px;
+                                color: $white-text;
+                                background: $primary-color;
+                                @include font-bold();
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .related-product{
+        margin-top: 40px;
+        .owl-stage-outer{
+            overflow: visible;
+            .owl-item{
+                opacity: 0;
+                pointer-events: none;
+                &.active{
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+        }
+        > h3{
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 19px;
+            color: $mine-shaft-text;
+            @include font-bold();
+            position: relative;
+            &:before{
+                content: '';
+                width: 54px;
+                height: 3px;
+                background: $primary-color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}

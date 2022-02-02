@@ -1,0 +1,30 @@
+/*
+    Services
+*/
+.services-v5{
+    @extend .why-choose-us;
+    background: transparent;
+    .box{
+        .box-icon{
+            .flaticon{
+                &:before{
+                    color: #dcddde;
+                }
+            }
+        }
+        .box-text{
+            h3{
+                color: $mine-shaft-text;
+            }
+            p{
+                color: $nandor-text;
+            }
+        }
+    }
+}
+/*
+    Services Detail
+*/
+.services-detail{
+    @extend .portfolio-detail;
+}
